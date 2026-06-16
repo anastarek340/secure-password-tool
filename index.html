@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Password Strength Checker</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<main class="card">
+
+  <h1>Password Strength Checker</h1>
+  <p>Check your password strength instantly with live feedback.</p>
+
+  <input id="pwd" type="password" placeholder="Enter password">
+
+  <div class="row">
+    <button id="toggle">Show</button>
+    <button id="generate">Generate</button>
+    <button id="copy" class="ghost">Copy</button>
+  </div>
+
+  <div class="meter">
+    <div id="bar"></div>
+  </div>
+
+  <h3 id="scoreText">Strength: -</h3>
+  <div id="scoreNum">0</div>
+
+  <ul id="tips"></ul>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
